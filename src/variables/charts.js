@@ -301,7 +301,7 @@ function parseOptions(parent, options) {
   }
 }
 
-// Example 1 of Chart inside src/views/Index.js (Sales value - Card)
+// Example 1 of Chart (Speaking pace)
 let chartExample1 = {
   options: {
     scales: {
@@ -314,7 +314,7 @@ let chartExample1 = {
           ticks: {
             callback: function(value) {
               if (!(value % 10)) {
-                return "$" + value + "k";
+                return value;
               }
             }
           }
@@ -332,7 +332,7 @@ let chartExample1 = {
             content += label;
           }
 
-          content += "$" + yLabel + "k";
+          content += yLabel;
           return content;
         }
       }
@@ -340,29 +340,29 @@ let chartExample1 = {
   },
   data1: canvas => {
     return {
-      labels: ["May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
+      labels: ["5s", "10s", "15s", "20s", "25s", "30s", "35s", "40s"],
       datasets: [
         {
-          label: "Performance",
-          data: [0, 20, 10, 30, 15, 40, 20, 60, 60]
+          label: "Average Words Per Min",
+          data: [100, 120, 100, 130, 150, 140, 120, 160, 160]
         }
       ]
     };
   },
   data2: canvas => {
     return {
-      labels: ["May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
+      labels: ["5s", "10s", "15s", "20s", "25s", "30s", "35s", "40s"],
       datasets: [
         {
-          label: "Performance",
-          data: [0, 20, 5, 25, 10, 30, 15, 40, 40]
+          label: "Average Words Per Min",
+          data: [100, 120, 150, 125, 108, 130, 150, 140, 140]
         }
       ]
     };
   }
 };
 
-// Example 2 of Chart inside src/views/Index.js (Total orders - Card)
+// Example 2 of Chart (Filler Words)
 let chartExample2 = {
   options: {
     scales: {
@@ -370,8 +370,8 @@ let chartExample2 = {
         {
           ticks: {
             callback: function(value) {
-              if (!(value % 10)) {
-                //return '$' + value + 'k'
+              if (!(value % 1)) {
+                
                 return value;
               }
             }
@@ -395,11 +395,11 @@ let chartExample2 = {
     }
   },
   data: {
-    labels: ["Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
+    labels: ["um", "like", "right", "well"],
     datasets: [
       {
-        label: "Sales",
-        data: [25, 20, 30, 22, 17, 29],
+        label: "Filler Words",
+        data: [5, 6, 3, 1],
         maxBarThickness: 10
       }
     ]

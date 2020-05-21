@@ -52,16 +52,19 @@ class Tables extends React.Component {
             <div className="col">
               <Card className="shadow">
                 <CardHeader className="border-0">
-                  <h3 className="mb-0">Card tables</h3>
+                  <h3 className="mb-0">Latest Sessions</h3>
+                  <label htmlFor="filter">Filter by Date: </label>&nbsp;<input type="text" id="filter" />
+                  &nbsp;&nbsp;&nbsp;
+                  <label htmlFor="filter">Filter by Student: </label>&nbsp;<input type="text" id="filter" />
                 </CardHeader>
                 <Table className="align-items-center table-flush" responsive>
                   <thead className="thead-light">
                     <tr>
-                      <th scope="col">Project</th>
-                      <th scope="col">Budget</th>
+                      <th scope="col">Session Subject</th>
+                      <th scope="col">Date</th>
                       <th scope="col">Status</th>
-                      <th scope="col">Users</th>
-                      <th scope="col">Completion</th>
+                      <th scope="col">Student</th>
+                      <th scope="col">Rating</th>
                       <th scope="col" />
                     </tr>
                   </thead>
@@ -81,12 +84,12 @@ class Tables extends React.Component {
                           </a>
                           <Media>
                             <span className="mb-0 text-sm">
-                              Argon Design System
+                              Elevator Pitch
                             </span>
                           </Media>
                         </Media>
                       </th>
-                      <td>$2,500 USD</td>
+                      <td>March 14, 2020 1:59:29 PM</td>
                       <td>
                         <Badge color="" className="badge-dot mr-4">
                           <i className="bg-warning" />
@@ -113,7 +116,7 @@ class Tables extends React.Component {
                           >
                             Ryan Tompson
                           </UncontrolledTooltip>
-                          <a
+                          {/* <a
                             className="avatar avatar-sm"
                             href="#pablo"
                             id="tooltip941738690"
@@ -166,7 +169,7 @@ class Tables extends React.Component {
                             target="tooltip996637554"
                           >
                             Jessica Doe
-                          </UncontrolledTooltip>
+                          </UncontrolledTooltip> */}
                         </div>
                       </td>
                       <td>
@@ -198,19 +201,13 @@ class Tables extends React.Component {
                               href="#pablo"
                               onClick={e => e.preventDefault()}
                             >
-                              Action
+                              Go to this session
                             </DropdownItem>
                             <DropdownItem
                               href="#pablo"
                               onClick={e => e.preventDefault()}
                             >
-                              Another action
-                            </DropdownItem>
-                            <DropdownItem
-                              href="#pablo"
-                              onClick={e => e.preventDefault()}
-                            >
-                              Something else here
+                              Go to the student's profile
                             </DropdownItem>
                           </DropdownMenu>
                         </UncontrolledDropdown>
@@ -231,12 +228,12 @@ class Tables extends React.Component {
                           </a>
                           <Media>
                             <span className="mb-0 text-sm">
-                              Angular Now UI Kit PRO
+                              Breifing Presentation
                             </span>
                           </Media>
                         </Media>
                       </th>
-                      <td>$1,800 USD</td>
+                      <td>Feb 12, 2020 10:09:21 AM</td>
                       <td>
                         <Badge color="" className="badge-dot">
                           <i className="bg-success" />
@@ -245,24 +242,6 @@ class Tables extends React.Component {
                       </td>
                       <td>
                         <div className="avatar-group">
-                          <a
-                            className="avatar avatar-sm"
-                            href="#pablo"
-                            id="tooltip746418347"
-                            onClick={e => e.preventDefault()}
-                          >
-                            <img
-                              alt="..."
-                              className="rounded-circle"
-                              src={require("assets/img/theme/team-1-800x800.jpg")}
-                            />
-                          </a>
-                          <UncontrolledTooltip
-                            delay={0}
-                            target="tooltip746418347"
-                          >
-                            Ryan Tompson
-                          </UncontrolledTooltip>
                           <a
                             className="avatar avatar-sm"
                             href="#pablo"
@@ -280,42 +259,6 @@ class Tables extends React.Component {
                             target="tooltip102182364"
                           >
                             Romina Hadid
-                          </UncontrolledTooltip>
-                          <a
-                            className="avatar avatar-sm"
-                            href="#pablo"
-                            id="tooltip406489510"
-                            onClick={e => e.preventDefault()}
-                          >
-                            <img
-                              alt="..."
-                              className="rounded-circle"
-                              src={require("assets/img/theme/team-3-800x800.jpg")}
-                            />
-                          </a>
-                          <UncontrolledTooltip
-                            delay={0}
-                            target="tooltip406489510"
-                          >
-                            Alexander Smith
-                          </UncontrolledTooltip>
-                          <a
-                            className="avatar avatar-sm"
-                            href="#pablo"
-                            id="tooltip476840018"
-                            onClick={e => e.preventDefault()}
-                          >
-                            <img
-                              alt="..."
-                              className="rounded-circle"
-                              src={require("assets/img/theme/team-4-800x800.jpg")}
-                            />
-                          </a>
-                          <UncontrolledTooltip
-                            delay={0}
-                            target="tooltip476840018"
-                          >
-                            Jessica Doe
                           </UncontrolledTooltip>
                         </div>
                       </td>
@@ -348,19 +291,13 @@ class Tables extends React.Component {
                               href="#pablo"
                               onClick={e => e.preventDefault()}
                             >
-                              Action
+                              Go to this session
                             </DropdownItem>
                             <DropdownItem
                               href="#pablo"
                               onClick={e => e.preventDefault()}
                             >
-                              Another action
-                            </DropdownItem>
-                            <DropdownItem
-                              href="#pablo"
-                              onClick={e => e.preventDefault()}
-                            >
-                              Something else here
+                              Go to the student's profile
                             </DropdownItem>
                           </DropdownMenu>
                         </UncontrolledDropdown>
@@ -381,56 +318,20 @@ class Tables extends React.Component {
                           </a>
                           <Media>
                             <span className="mb-0 text-sm">
-                              Black Dashboard
+                              Proposal Presentation
                             </span>
                           </Media>
                         </Media>
                       </th>
-                      <td>$3,150 USD</td>
+                      <td>Dec 21, 2019 3:56:11 PM</td>
                       <td>
                         <Badge color="" className="badge-dot mr-4">
                           <i className="bg-danger" />
-                          delayed
+                          pending
                         </Badge>
                       </td>
                       <td>
                         <div className="avatar-group">
-                          <a
-                            className="avatar avatar-sm"
-                            href="#pablo"
-                            id="tooltip753056318"
-                            onClick={e => e.preventDefault()}
-                          >
-                            <img
-                              alt="..."
-                              className="rounded-circle"
-                              src={require("assets/img/theme/team-1-800x800.jpg")}
-                            />
-                          </a>
-                          <UncontrolledTooltip
-                            delay={0}
-                            target="tooltip753056318"
-                          >
-                            Ryan Tompson
-                          </UncontrolledTooltip>
-                          <a
-                            className="avatar avatar-sm"
-                            href="#pablo"
-                            id="tooltip441753266"
-                            onClick={e => e.preventDefault()}
-                          >
-                            <img
-                              alt="..."
-                              className="rounded-circle"
-                              src={require("assets/img/theme/team-2-800x800.jpg")}
-                            />
-                          </a>
-                          <UncontrolledTooltip
-                            delay={0}
-                            target="tooltip441753266"
-                          >
-                            Romina Hadid
-                          </UncontrolledTooltip>
                           <a
                             className="avatar avatar-sm"
                             href="#pablo"
@@ -448,24 +349,6 @@ class Tables extends React.Component {
                             target="tooltip188462246"
                           >
                             Alexander Smith
-                          </UncontrolledTooltip>
-                          <a
-                            className="avatar avatar-sm"
-                            href="#pablo"
-                            id="tooltip621168444"
-                            onClick={e => e.preventDefault()}
-                          >
-                            <img
-                              alt="..."
-                              className="rounded-circle"
-                              src={require("assets/img/theme/team-4-800x800.jpg")}
-                            />
-                          </a>
-                          <UncontrolledTooltip
-                            delay={0}
-                            target="tooltip621168444"
-                          >
-                            Jessica Doe
                           </UncontrolledTooltip>
                         </div>
                       </td>
@@ -498,25 +381,19 @@ class Tables extends React.Component {
                               href="#pablo"
                               onClick={e => e.preventDefault()}
                             >
-                              Action
+                              Go to this session
                             </DropdownItem>
                             <DropdownItem
                               href="#pablo"
                               onClick={e => e.preventDefault()}
                             >
-                              Another action
-                            </DropdownItem>
-                            <DropdownItem
-                              href="#pablo"
-                              onClick={e => e.preventDefault()}
-                            >
-                              Something else here
+                              Go to the student's profile
                             </DropdownItem>
                           </DropdownMenu>
                         </UncontrolledDropdown>
                       </td>
                     </tr>
-                    <tr>
+                    {/* <tr>
                       <th scope="row">
                         <Media className="align-items-center">
                           <a
@@ -814,8 +691,8 @@ class Tables extends React.Component {
                             </DropdownItem>
                           </DropdownMenu>
                         </UncontrolledDropdown>
-                      </td>
-                    </tr>
+                      </td> 
+                    </tr>*/}
                   </tbody>
                 </Table>
                 <CardFooter className="py-4">
@@ -874,7 +751,7 @@ class Tables extends React.Component {
             </div>
           </Row>
           {/* Dark table */}
-          <Row className="mt-5">
+          {/* <Row className="mt-5">
             <div className="col">
               <Card className="bg-default shadow">
                 <CardHeader className="bg-transparent border-0">
@@ -1649,7 +1526,7 @@ class Tables extends React.Component {
                 </Table>
               </Card>
             </div>
-          </Row>
+          </Row> */}
         </Container>
       </>
     );

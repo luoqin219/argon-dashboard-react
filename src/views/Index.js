@@ -80,9 +80,9 @@ class Index extends React.Component {
                   <Row className="align-items-center">
                     <div className="col">
                       <h6 className="text-uppercase text-light ls-1 mb-1">
-                        Overview
+                      Speaking Pace
                       </h6>
-                      <h2 className="text-white mb-0">Sales value</h2>
+                      <h2 className="text-white mb-0">Average Words Per Minute</h2>
                     </div>
                     <div className="col">
                       <Nav className="justify-content-end" pills>
@@ -94,8 +94,8 @@ class Index extends React.Component {
                             href="#pablo"
                             onClick={e => this.toggleNavs(e, 1)}
                           >
-                            <span className="d-none d-md-block">Month</span>
-                            <span className="d-md-none">M</span>
+                            <span className="d-none d-md-block">Latest Session</span>
+                            <span className="d-md-none">S</span>
                           </NavLink>
                         </NavItem>
                         <NavItem>
@@ -107,8 +107,8 @@ class Index extends React.Component {
                             href="#pablo"
                             onClick={e => this.toggleNavs(e, 2)}
                           >
-                            <span className="d-none d-md-block">Week</span>
-                            <span className="d-md-none">W</span>
+                            <span className="d-none d-md-block">Average</span>
+                            <span className="d-md-none">M</span>
                           </NavLink>
                         </NavItem>
                       </Nav>
@@ -133,9 +133,9 @@ class Index extends React.Component {
                   <Row className="align-items-center">
                     <div className="col">
                       <h6 className="text-uppercase text-muted ls-1 mb-1">
-                        Performance
+                        Filler Words
                       </h6>
-                      <h2 className="mb-0">Total orders</h2>
+                      <h2 className="mb-0">Word Count</h2>
                     </div>
                   </Row>
                 </CardHeader>
@@ -157,7 +157,7 @@ class Index extends React.Component {
                 <CardHeader className="border-0">
                   <Row className="align-items-center">
                     <div className="col">
-                      <h3 className="mb-0">Page visits</h3>
+                      <h3 className="mb-0">Eye Contact Performance</h3>
                     </div>
                     <div className="col text-right">
                       <Button
@@ -174,7 +174,7 @@ class Index extends React.Component {
                 <Table className="align-items-center table-flush" responsive>
                   <thead className="thead-light">
                     <tr>
-                      <th scope="col">Page name</th>
+                      <th scope="col">Audience</th>
                       <th scope="col">Visitors</th>
                       <th scope="col">Unique users</th>
                       <th scope="col">Bounce rate</th>
@@ -235,7 +235,7 @@ class Index extends React.Component {
                 <CardHeader className="border-0">
                   <Row className="align-items-center">
                     <div className="col">
-                      <h3 className="mb-0">Social traffic</h3>
+                      <h3 className="mb-0">Pauses Stats</h3>
                     </div>
                     <div className="col text-right">
                       <Button

@@ -62,7 +62,7 @@ class Icons extends React.Component {
                         >
                           <div>
                             <i className=" ni ni-active-40" />
-                            <span>active-40</span>
+                            <span>student1</span>
                           </div>
                         </button>
                       </CopyToClipboard>
@@ -91,7 +91,7 @@ class Icons extends React.Component {
                         >
                           <div>
                             <i className=" ni ni-air-baloon" />
-                            <span>air-baloon</span>
+                            <span>student2</span>
                           </div>
                         </button>
                       </CopyToClipboard>
@@ -118,7 +118,7 @@ class Icons extends React.Component {
                         >
                           <div>
                             <i className=" ni ni-album-2" />
-                            <span>album-2</span>
+                            <span>student3</span>
                           </div>
                         </button>
                       </CopyToClipboard>
@@ -147,7 +147,7 @@ class Icons extends React.Component {
                         >
                           <div>
                             <i className=" ni ni-align-center" />
-                            <span>align-center</span>
+                            <span>student4</span>
                           </div>
                         </button>
                       </CopyToClipboard>
@@ -176,7 +176,7 @@ class Icons extends React.Component {
                         >
                           <div>
                             <i className=" ni ni-align-left-2" />
-                            <span>align-left-2</span>
+                            <span>student5</span>
                           </div>
                         </button>
                       </CopyToClipboard>
@@ -205,7 +205,7 @@ class Icons extends React.Component {
                         >
                           <div>
                             <i className=" ni ni-ambulance" />
-                            <span>ambulance</span>
+                            <span>student6</span>
                           </div>
                         </button>
                       </CopyToClipboard>
@@ -232,7 +232,7 @@ class Icons extends React.Component {
                         >
                           <div>
                             <i className=" ni ni-app" />
-                            <span>app</span>
+                            <span>student7</span>
                           </div>
                         </button>
                       </CopyToClipboard>
@@ -261,7 +261,7 @@ class Icons extends React.Component {
                         >
                           <div>
                             <i className=" ni ni-archive-2" />
-                            <span>archive-2</span>
+                            <span>student8</span>
                           </div>
                         </button>
                       </CopyToClipboard>
@@ -275,7 +275,7 @@ class Icons extends React.Component {
                           : "Copy To Clipbord"}
                       </UncontrolledTooltip>
                     </Col>
-                    <Col lg="3" md="6">
+                    {/*<Col lg="3" md="6">
                       <CopyToClipboard
                         text={"atom"}
                         onCopy={() => this.setState({ copiedText: "atom" })}
@@ -2887,7 +2887,7 @@ class Icons extends React.Component {
                           ? "Copied"
                           : "Copy To Clipbord"}
                       </UncontrolledTooltip>
-                    </Col>
+                    </Col> */}
                   </Row>
                 </CardBody>
               </Card>
