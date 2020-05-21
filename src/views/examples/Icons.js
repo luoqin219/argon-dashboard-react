@@ -44,7 +44,7 @@ class Icons extends React.Component {
             <div className=" col">
               <Card className=" shadow">
                 <CardHeader className=" bg-transparent">
-                  <h3 className=" mb-0">Icons</h3>
+                  <h3 className=" mb-0">All students</h3>
                 </CardHeader>
                 <CardBody>
                   <Row className=" icon-examples">
