@@ -228,7 +228,7 @@ class Tables extends React.Component {
                           </a>
                           <Media>
                             <span className="mb-0 text-sm">
-                              Breifing Presentation
+                              Briefing Presentation
                             </span>
                           </Media>
                         </Media>
